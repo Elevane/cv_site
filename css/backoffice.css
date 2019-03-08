@@ -1,0 +1,199 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #75b5b5;
+
+}
+
+
+#pastille
+{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 200px;
+    position: relative;
+    top: 15px;
+    right: 25px;
+}
+
+#authform
+{
+    width: 200px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.headReg
+{
+    width: 200px;
+    margin: 50px auto 0px;
+    color: white;
+    background: #5F9EA0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+.input_group
+{
+    margin: 10px 0px 10px 0px;
+}
+
+.input_group label
+{
+    display: block;
+    text-align: left;
+    margin: 8px;
+}
+
+.input_group input
+{
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#tableauC th
+{
+    background-color:#B0C4DE;
+    width: 200px;
+    color: white;
+    background: #5F9EA0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+#tableauC td
+{
+    background-color: white;
+    color: white;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    color: black;
+    
+}
+
+
+
+#btnbas a button
+{
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
+.btnBO input
+{
+     padding: 20px;
+    font-size: 20px;
+    margin: 50px;
+}
+
+
+
+#sectionGestionApropos article
+{
+    padding: 30px;
+    border: 2px solid gray;
+    margin: 20px 200px;
+    background-color: white;
+
+}
+
+#sectionGestionApropos article img
+{
+    width: 150px;
+    height: 150px;
+}
+
+.h1
+{
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid grey;
+    background-color: white;
+    margin: 0px 150px;
+}
+
+#formGestionApropos
+{
+    padding: 30px;
+    margin: 30px;
+}
+
+#sectionGestionApropos article .imga
+{
+    width: 30px;
+    height: 30px
+}
+
+#sectionGestionApropos article .imgPF
+{
+    width: 250px;
+    height: 250px;
+}
+
+#sectionGestionApropos article
+{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e2ddcd;
+    flex-direction: column;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.articleGP
+{
+    text-align: center;
+}
+
+
+.formGestion div
+{
+    margin: 0 auto;
+    background-color: white;
+    width: 500px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.formGestion div input
+{
+    margin-bottom: 5px; 
+}
+
+.imgMB
+{
+    width: 100px;
+    height: 100px;
+}
+
+
+

@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@font-face {font-family: bazar; src: url(bazar.ttf);}
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'bazar','Oswald', sans-serif;color: #393a3a;}
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------BODY-----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+h1
+{
+    font-size: 100px;
+    text-shadow: 2px 2px 0 #f9ebd9, 3px 3px 0 #393a3a;
+    text-transform: uppercase;
+}
+
+h3
+{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+section h1, .div_xxx
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section h1
+{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.div_xxx
+{
+    margin-bottom: 40px;                   /* selecteur de la div des deux paragraphes sur l'image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div_xxx p 
+{
+    padding-bottom: 5px;                    /* selecteur des deux paragraphe au dessus de l'image */
+    font-size: 15px;
+    position: relative;
+}
+
+.div_xxx > p:first-child::after, .div_xxx > p:first-child::before
+{
+    content: '';
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: -50px;
+    bottom: 12px;
+    border: 1px solid black;
+}
+
+.div_xxx > p:first-child::before
+
+{
+    left: -50px;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------menu nav--------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+header
+{
+    width: 100%;
+    height: 135px;
+    background-color: #75b5b5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;                     /* selecteur */
+    align-items: center;
+   
+}
+header a
+{
+    text-decoration: none;
+    color: #f9ebd9;
+    font-size: 32px;
+    text-transform: uppercase;                          /* selecteur des liens du nav du header*/
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+}
+
+
+#header_img
+{
+    width: 150px;
+    height: 150px;                                        /* selecteur de l'image du header */
+    position: relative;
+    top: 35px;
+}
+header a:hover
+{
+    color: #393a3a;
+    
+}
+
+header a:hover::after, header a:hover::before
+{
+    content: '';
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: -50px;
+    bottom: 15px;
+    border: 3px solid black;
+}
+
+header a:hover::before
+
+{
+    left: -50px;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------ACCEUIL--------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+#acceuil
+{
+    box-shadow: 0 1px 10px #68a0a0 inset; 
+    width: 100%;
+    height: 1000px;
+    background-color: #75b5b5;              /* selecteur de la sectionacceuil */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#acceuil_img_main
+{
+    width: 700px;
+    height: 500px;
+    background-color:white;                 /* selecteur  de l'image de l'acceuil*/
+    border-radius: 5px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+.section_acceuil_p
+{
+    text-transform: uppercase;
+    font-weight: 90;                        /* selecteur  de al class  des deux paragraphe sous l'image*/
+    color: #f9ebd9;
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+#legende_acceuil
+{
+    color:#393a3a;
+    font-size: 30px;                        /* selecteur du paragraphe "legende" sous l'image*/
+    position:relative;  
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------A PROPOS-------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+#apropos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1135px;
+    background-color: #e2ddcd;
+    flex-wrap: wrap;
+}
+#divapropos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 300px;
+}
+
+#divapropos article 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    box-shadow: 5px 5px 5px 1px #b9b5a9;
+    padding: 20px;
+    background-color: #d1ccba;
+}
+
+
+#divapropos article ul li
+{
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+
+#divapropos img
+{
+    width: 150px;
+    height: 150px;
+}
+
+#divapropos h3
+{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+#divapropos p
+{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------PORTFOLIO------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+#portfolio
+{
+    width: 100%;
+    height: 1000px;
+    background-color: #e08866;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#voirplus 
+{
+    text-transform: uppercase;
+    text-align: center;
+}
+button
+{
+    border-style: none;
+    padding: 5px;
+    background-color: white;
+}
+
+#sectionport
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:  #e08866;
+    flex-wrap: wrap;
+    padding: 20px 300px;
+}
+#sectionport article
+{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e2ddcd;
+    flex-direction: column;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+.imga
+{
+    width: 30px;
+    height: 30px;
+}
+
+.imgPF
+{
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#sectionport p
+{
+    text-transform: uppercase;
+}
+
+#divbutton
+{
+    margin: 40px 350px;
+}
+
+#divbutton button 
+{ 
+    float:left;
+    height:24px;
+    line-height:24px;
+    position:relative;
+    font-size:12px;
+    padding:0 10px 0 12px;
+    margin-right: 20px;
+    background:white;
+    color:#4e5259;
+    text-decoration:none;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    border-bottom-right-radius:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-right-radius:4px;
+    border-top-right-radius:4px; 
+}
+#divbutton button:before
+{ 
+    content:"";
+    float:left; position:absolute;
+    top:0;
+    left:-12px;
+    width:0;
+    height:0;
+    border-color:transparent white transparent transparent;
+    border-style:solid; border-width:12px 12px 12px 0;  
+}
+#divbutton button:after
+{ 
+    content:"";
+    position:absolute;
+    top:10px; left:0;
+    float:left;
+    width:4px;
+    height:4px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px; background:#4e5259;
+}
+#divbutton button:hover{background:#4e5259;color: white;}
+#divbutton button:hover:before{border-color:transparent #555 transparent transparent;}
+#divbutton button:hover:after{background: white;}
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------MON BLOG-------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+#mon_blog
+{
+    width: 100%;
+    height: 1200px;
+    background-color: #ddd8c9; 
+}
+
+#mon_blog article
+{
+    margin: 0 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    float: left;
+}
+
+#mon_blog article section
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: serif, sans-serif;
+    align-items: flex-start;
+    justify-content: center;
+    width: 1050px;
+}
+#mon_blog article section p
+{
+    
+}
+
+.boite_blog
+{
+    width: 240px;
+    height: 250px;
+    background-color: #e3dfd7;
+    margin: 10px;
+    border: 2px solid white;
+    
+}
+
+#mon_blog article h3
+{
+    font-size: 20px;
+}
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------ME CONTACTER---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+#me_contacter
+{
+    width: 100%;
+    height: 950px;
+    background-color: #4e5259; 
+    color: #f9ebd9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#me_contacter h1
+{
+    color:#f9ebd9;
+    text-shadow: 3px 3px 0 #393a3a, 5px 5px 0  #f9ebd9;
+}
+#me_contacter .div_xxx p
+{
+    color:#f9ebd9;
+}
+
+#me_contacter .div_xxx p:first-child::after, #me_contacter .div_xxx  p:first-child::before
+{
+    content: '';
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: -50px;
+    bottom: 12px;
+    border: 1px solid #f9ebd9;
+}
+
+.div_xxx > p:first-child::before
+
+{
+    left: -50px;
+}
+ #me_contacter form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+}
+#me_contacter h4
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #f9ebd9;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+form input[type="text"], form input[type="email"]
+{
+    width: 500px;
+    height: 40px;
+    margin: 5px;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    color: grey;
+}
+
+
+#commentaire
+{
+    width: 500px;
+    height: 270px;
+    border: 3px solid transparent;
+    margin-bottom: 10px;
+    position: relative;
+    left: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+form input[type="submit"]
+{
+    margin-left: 5px;
+    width: 150px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+#me_contacter img
+{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------snake---------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+#script
+
+{
+    margin: 500px;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*-------------------------------------Carroussels----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+/*
+div#slider
+{
+    width: 80%;
+    max-width: 1000px;
+}
+div#slider figure
+{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
+
+div#slider figure img
+{
+    widows: 20%;
+    height: auto;
+    float: left;
+}
+
+div#slider 
+{
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+*/
+
+
+
+
+
+
